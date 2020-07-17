@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/create.css">
+    <link href="/js/bootstrap.min.js" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  
+<script src="/js/create.js"></script>
+    <h3 class="ti">Add new one</h3>
+<form method="POST" action="/createnew/addd">
+    <div class="row">    
+        <br>
+        <div class="col-md-2 col-sm-3 text-center">
+          <img id="preview">
+          <!-- <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/women/56.jpg" style="width:100px;height:100px" class="img-circle"></a> -->
+        </div>
+        <div class="col-md-10 col-sm-9">
+          <h3><input type="text" id="title" placeholder="ENTER TITLE" name="title"></h3>
+          <div class="row">
+            <div class="col-xs-9">
+              <h4><INPUT type="text" id="te" placeholder="ENTER AUTHOR NAME" name="author"></h4>
+                <label for="">ADD IMAGE</label><br>
+                <input type="file" name="image" id="input"  onchange="showFiles()" accept="image/*">
+             
+             
+             <!-- <small style="font-family:courier,'new courier';" class="text-muted">Yesterday • <a href="#" class="text-muted">Read More</a></small> -->
+            </div><br><br>
+      </div><br>
+        
+        <button type="submit" onsubmit="return valid();">CLICK HERE TO SUBMIT</button>
+      </div>
+
+      
+      <hr>
+    </form>
+     
+      
+      
+</body>
+</html>
