@@ -1,0 +1,111 @@
+body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #252627;
+
+  }
+  h1{
+    text-align: center;
+    color: #2ecc71;
+  }
+  .box{
+    width: 30%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #252627;
+    text-align: center;
+  }
+  .box h1{
+    color: white;
+    text-transform: none;
+    font-weight: 500;
+    border-radius: 24px;
+    padding: 10px 10px;
+  }
+  .email{
+    border:0;
+    background:#252627 ;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  
+  }
+  .box input[type = "email"],.box input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  .box input[type = "email"]:focus,.box input[type = "password"]:focus{
+    width: 220px;
+    background:none;
+    border-color: #3498db;
+  }
+  .box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .box input[type = "submit"]:hover{
+    background: #3498db;
+  }
+  button{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    text-decoration: solid;
+  
+  }
+  button:hover{
+    background: #2ecc71;
+  }
+  a{
+    text-decoration: none;
+    color: azure;
+  }
+  .form{
+    margin-top: -25px;
+  }
+  .alert{
+    background-color:#252627 ;
+    color: red;
+    padding: 10;
+  }

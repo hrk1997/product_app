@@ -1,0 +1,82 @@
+<div class="card">
+
+    <form (ngSubmit)="AddProduct();">
+
+    <div class="card-header">
+        {{title}}
+    </div>
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table">
+
+                    <tr>
+
+                        <td><label>ProductId</label></td>
+                        <td><input type="text" name="t-id" [(ngModel)]='ProductItem.ProductId'></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><label>ProductName</label></td>
+                        <td><input type="text" name="t-na" [(ngModel)]='ProductItem.ProductName'></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><label>ProductCode</label></td>
+                        <td><input type="text" name="t-co" [(ngModel)]='ProductItem.ProductCode'></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><label>Release Date</label></td>
+                        <td><input type="text" name="t-da" [(ngModel)]='ProductItem.releaseDate'></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><label>Price</label></td>
+                        <td><input type="text" name="t-i" [(ngModel)]='ProductItem.price'></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><label>StarRating</label></td>
+                        <td><input type="text" name="t-sr" [(ngModel)]='ProductItem.starrating'></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><label>ImageUrl</label></td>
+                        <td><input type="text" name="t-iMG" [(ngModel)]='ProductItem.imageUrl'></td>
+
+                    </tr>
+
+                    
+
+                    <tr>
+
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+                            <button class="btn" type="submit"> Submit</button>
+                        </td>
+
+                    </tr>
+            </table>
+        </div>
+    </div>
+
+    </form>
+
+
+</div>

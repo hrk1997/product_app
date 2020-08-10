@@ -1,0 +1,39 @@
+
+
+
+
+<div class="card-header">
+    <!-- {{title}} -->
+</div>
+<div class="le">
+<div class="ta">
+
+  
+  
+    <!-- [title]='product.ProductName'
+    [style.width.px]='imageWidth'
+    [style.margin.px]='imageMargin'>
+    
+  </td> 
+    <td>{{products.ProductName}}</td>
+    <td>{{products.ProductCode}}</td>
+    <td>{{products.releaseDate}}</td>
+    <td>{{products.price}}</td>
+   <td><button><a routerLink="edit" (click)="getProduct(product._id)">EDIT</a></button></td>
+  <td><button><a routerLink="delete" (click)=" deleteProduct(product._id)">DELETE</a></button></td> -->
+  <form (ngSubmit)="update();">
+
+  <input type="text" value="{{products?.ProductName}}" name="nme"  [(ngModel)]="products.ProductName">
+
+<input type="text" value="{{products?.ProductCode}}" name="gf"  [(ngModel)]="products.ProductCode">
+<input type="text" value="{{products?.releaseDate}}" name="jk"  [(ngModel)]="products.releaseDate">
+<input type="text" value="{{products?.price}}" name="ty"  [(ngModel)]="products.price">
+<!-- <input type="text" value="{{products?.ProductName}}" name="nme"> -->
+
+<input type="submit" value="Update">
+  </form>
+
+</div>
+
+
+</div>

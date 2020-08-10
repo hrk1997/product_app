@@ -1,0 +1,99 @@
+
+  
+<div class="container">
+  <div class="col-12">
+     <div>
+
+  
+      <form [formGroup]="regForm" (ngSubmit)="AddUser();"class="sidenav" >
+        <label>
+         EmailId:</label>
+          <input type="email" size="50" formControlName="username" class="form-control">
+        
+
+        <div *ngIf="username.invalid&&(username.dirty||username.touched)" class="alert">
+
+            <div *ngIf="username.errors.required">
+              Email is required
+            </div>
+
+            <div *ngIf="username.errors.minlength">
+              UserName must be atleast 4 charas
+            </div>
+
+            <div *ngIf="username.errors.email">
+              UserName is not valid
+            </div>
+
+        </div>
+          
+
+          <br>
+        
+        <label>
+          FirstName:  </label>
+          <input type="text" formControlName="firstname" class="form-control">
+      
+
+        
+        <div *ngIf="firstname.invalid&&(firstname.dirty||firstname.touched)" class="alert">
+
+          <div *ngIf="firstname.errors.required">
+            firstname is required
+          </div>
+
+          <div *ngIf="firstname.errors.minlength">
+           Length is too short
+          </div>
+
+          <div *ngIf="firstname.errors.maxlength">
+           It is the maximum Length
+           </div>
+            </div> <br>
+
+        <label>
+          LastName:        </label>
+
+          <input type="text" formControlName="lastname" class="form-control">
+
+          
+        <div *ngIf="lastname.invalid&&(lastname.dirty||lastname.touched)" class="alert">
+
+          <div *ngIf="lastname.errors.required">
+            LastName is required
+          </div>
+
+        </div> <br>
+
+        <label>
+          ContactNo:  </label>
+          <input type="text" formControlName="contactno" class="form-control">
+      
+          <div *ngIf="contactno.invalid&&(contactno.dirty||contactno.touched)" class="alert">
+
+            <div *ngIf="contactno.errors.pattern">
+              Contactno is required
+            </div>
+  
+          </div> <br>
+          <label>
+            password:</label>
+            <input type="password" formControlName="password" class="form-control">
+          
+          <div *ngIf="password.invalid&&(password.dirty||password.touched)" class="alert">
+  
+            <div *ngIf="password.errors.required">
+              Enter Password
+            </div>
+  
+            <div *ngIf="password.errors.pattern">
+              Invalid password
+            </div>
+  
+           </div> <br>
+        <button type="submit" [disabled]="!regForm.valid" class="button">Submit</button>
+      </form>
+    <!-- </div> -->
+  </div>
+</div>
+</div>

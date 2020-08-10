@@ -1,0 +1,28 @@
+.container {
+    background-color: #252627;
+    padding: 20px;
+    color: white;
+    width: 30%;
+  }
+.table{
+    width: 100%;
+    color: white;
+    text-align: left;
+}  
+.btn{
+  background-color: #2ecc71;
+  color: white;
+  font-weight: bold;
+}
+input {
+  height: 40px;
+  align-self: center;
+  background: none;
+  display: block;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  color: white;
+  border-radius: 24px;
+
+ 
+}  

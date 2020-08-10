@@ -1,0 +1,101 @@
+.sidenav{
+  text-align: left;
+  width: 100%;
+}
+
+  body{
+      width: 100px;
+      background-color: #252627;
+      font-family: 'Courier New', Courier, monospace;
+  }
+  h1{
+    text-align: left;
+      color: #2ecc71;
+  }
+  /* Style all input fields */
+  input {
+    border:0;
+    background: none;
+    height: 40px;
+    display: block;
+    /* margin: 20px auto; */
+    text-align: center;
+    border: 2px solid #2ecc71;
+    /* padding: 14px 40px; */
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    /* width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color: #222; */
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Style the container for inputs */
+  .container {
+    margin-top: 30px;
+    width: 30%; 
+    background-color: #252627;
+    padding: 20px;
+    color: blanchedalmond;
+    text-align: left;
+
+  }
+  
+  /* The message box is shown when the user clicks on the password field */
+  #message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+ .alert{
+     font-size: x-small;
+     color: red;
+     background-color: #252627;
+     
+ } 
+ .button{
+   background-color: #2ecc71;
+ }

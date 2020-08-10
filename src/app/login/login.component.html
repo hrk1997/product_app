@@ -1,0 +1,57 @@
+
+    <head>
+      <title>َLogin_hrk</title>
+    </head>
+    <body>
+    <form class="box" [formGroup]="regForm" (ngSubmit)="AddLogin();">
+    <div class="form">
+      <h1>Login</h1>
+
+      <input class="email" 
+        type="email" 
+        placeholder="username/Email" 
+        formControlName="username"
+      >
+      <div *ngIf="username.invalid&&(username.dirty||username.touched)" class="alert">
+
+        <div *ngIf="username.errors.required">
+          Email is required
+        </div>
+
+        <div *ngIf="username.errors.minlength">
+         length is too short
+        </div>
+
+        <div *ngIf="username.errors.email">
+         Email is not valid
+        </div>
+
+    </div>
+
+      <input 
+        type="password" 
+        placeholder="password" 
+        formControlName="password"
+      >
+      <div *ngIf="password.invalid&&(password.dirty||password.touched)" class="alert">
+  
+        <div *ngIf="password.errors.required">
+          Enter Password
+        </div>
+
+        <div *ngIf="password.errors.pattern">
+          Invalid password
+        </div>
+
+      </div>
+
+
+      <button class='submit' myform.ema  type="submit" [disabled]="!regForm.valid">Submit</button>
+
+    </div>
+  
+  </form>
+</body>
+  
+
+

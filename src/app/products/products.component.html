@@ -1,0 +1,48 @@
+
+
+<div class="card-header">
+ 
+</div>
+<div class="le">
+<div class="ta">
+<table class="table table-dark table-striped">
+  
+    <thead>
+      <tr>
+        <th><button class="btn btn-primary"
+          (click)='toggleImage()'>{{showImage?'Hide':'Show'}} IMAGE</button></th>
+        <th >Product</th>
+        <th>Code</th>
+        <th>Available</th>
+        <th>Price</th>
+        <th>5 Star Rating</th>
+      </tr>
+    </thead>
+
+
+  <tbody>
+    <tr *ngFor='let product of products'>
+    <td><img *ngIf='showImage'
+       [src]='product.imageUrl'
+    [title]='product.ProductName'
+    [style.width.px]='imageWidth'
+    [style.margin.px]='imageMargin'>
+    
+    </td>
+    <td>{{product.ProductName}}</td>
+    <td>{{product.ProductCode}}</td>
+    <td>{{product.releaseDate}}</td>
+    <td>{{product.price}}</td>
+    <td>{{product.starrating}}</td>
+  <td><button (click)="readmore(product._id)">EDIT</button></td>
+  <td><button><a routerLink="delete" (click)=" deleteProduct(product._id)">DELETE</a></button></td>
+
+    </tr>
+  </tbody>
+ 
+</table>
+
+</div>
+
+
+</div>
